@@ -1,0 +1,62 @@
+<html>
+<head>
+   <style>
+	.code {
+		font-family:monospace;
+		margin:10px;
+		border:1px solid grey;
+		padding:10px;
+	}
+	li {
+		margin:10px;
+	}
+   </style>
+</head>
+<body>
+
+<div style="border:1px solid grey;border-radius:5px;margin:20px; padding:20px; background:eeeeee;">
+  <h1 style="text-align:center;">ROBOKATA!</h1>
+
+  <h2>Objective</h2>
+  <p>This kata is a "tools kata", intended to build muscle-memory for anyone who does not have mastery over maven, the command line, git, or jenkins configuration.</p>
+  
+  
+  <h2>Goal</h2>
+  <p>Be the winner of the robocode battle by creating a jenkins build that produces a jar that contains one or more robocode AIs.</p>
+  
+  <h2>Rules</h2>
+  <ol>
+  <li>All coding and compilation must be done using command-line tools/editors.</li>
+<li>No copy+paste allowed (unless you're copying code that you just wrote as part of the current kata)</li>
+  <li>There is a 20 minute time limit. All coding and jenkins setup must be accomplished within this space of time.</li>
+  <li>You start from scratch ... no pom, no code, not even an empty git repository, no pre-existing jenkins build ... nothing!
+  <ul>
+  <li>Yes, that means you have to create a new git repo every time you do the kata</li>
+  <li>Yes, that means you have to create a new jenkins build every time you do the kata</li>
+  </ul>
+  </li>
+  <li>Jenkins
+   <ol>
+<li>The official battle will be launched by this tool ... any builds/classes that this does not detect are automatically disqualified.
+
+    <div class="code">java -jar <a href="http://166.78.172.199/robokata-runner-0.0.1-SNAPSHOT.one-jar.jar">robokata-runner-0.0.1-SNAPSHOT.one-jar.jar</a> http://166.78.172.199:8080 </div>
+</li>
+  <li>jobs must produce an 'archived' jar in order to be considered by the runner</li>
+  <li>jobs must be named according to this pattern: robokata-YYYY-MM-DD-contestant.  E.g. 'robokata-2013-06-26-stu'</li>
+  </ol>
+  </li>
+
+  </ol>
+
+  <h2>Resources</h2>
+  <ul>
+    <li>Use <a href="http://166.78.172.199/repo/">this maven repo</a> for the robocode jars.</li>
+    <li>Use <a href="http://166.78.172.199:8080">this jenkins instance</a> (westcodechoppers/westcodechoppers)</li>
+    <li>Use <a href="http://github.com/westcodechoppers">this github account</a> (westcodechoppers/westcodechoppers123)</li>
+    <li>Utilize the <a href="http://robocode.sourceforge.net/docs/robocode/">Robocode api</a> (NOTE: this api is for a later version!)</li>
+  </ul>
+
+</div>
+
+</body>
+</html>

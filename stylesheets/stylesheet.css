@@ -64,11 +64,11 @@ a:hover {
 }
 
 header {
-  padding-top: 40px;
-  padding-bottom: 40px;
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
-  background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
+  background: #333333 url(../media/code-craft-logo.png) 0 0 no-repeat;
+  background-position:center;
   border-bottom: solid 1px #275da1;
+  height:150px;
 }
 
 header h1 {

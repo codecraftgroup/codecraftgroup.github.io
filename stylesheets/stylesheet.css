@@ -53,11 +53,11 @@ body {
   background: #fafafa url(../images/body-bg.jpg) 0 0 repeat;
   font-family: 'Helvetica Neue', Helvetica, Arial, serif;
   font-weight: 400;
-  color: #666;
+  color: #333333;
 }
 
 a {
-  color: #2879d0;
+  color: #333333;
 }
 a:hover {
   color: #2268b2;
@@ -253,7 +253,7 @@ form {
 }
 
 #main-content h3 {
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
+  font-family: monospace; 
   font-size: 18px;
   font-weight: bold;
   margin-top: 24px;
@@ -262,10 +262,16 @@ form {
 } 
  
 #main-content h3:before {
-  content: "///";
-  color: #9ddcff;
-  padding-right: 0.3em;
+  content: "[";
+  color: #333333;
+  padding-right: 0em;
   margin-left: -2em;
+}
+#main-content h3:after {
+  content: "]";
+  color: #333333;
+  padding-left: 0em;
+  margin-right: -2em;
 }
 
 #main-content h4 {
@@ -392,16 +398,6 @@ footer a:hover {
   #main-content {
     width: 490px;
   }
-  #main-content h1:before,
-  #main-content h2:before,
-  #main-content h3:before,
-  #main-content h4:before,
-  #main-content h5:before,
-  #main-content h6:before {
-    content: none;
-    padding-right: 0;
-    margin-left: 0;
-  }
 }
 
 /* All Mobile Sizes (devices and browser) */
@@ -460,16 +456,6 @@ footer a:hover {
   aside#sidebar a.button {
     display: none;
   }
-  #main-content h1:before,
-  #main-content h2:before,
-  #main-content h3:before,
-  #main-content h4:before,
-  #main-content h5:before,
-  #main-content h6:before {
-    content: none;
-    padding-right: 0;
-    margin-left: 0;
-  }
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -477,3 +463,10 @@ footer a:hover {
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {}
+
+
+#main-content a {
+    color: #525252;
+    font-style: italic;
+    text-decoration:underline;
+}
